@@ -1,0 +1,2 @@
+export const fmtDate = (d) => new Date(d).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" });
+export const isOverdue = (d) => new Date(d) < new Date(new Date().setHours(0, 0, 0, 0));
